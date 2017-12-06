@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% for unP in Participants %}
+        <a href="{{ path('show_id', {'id': unP.id }) }}">{{ unP.name }}</a>
+    {% endfor %}
+{% endblock %}
